@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "app",
+    "name": "Waiter App",
     "slug": "app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,8 +8,7 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,16 +17,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "WaiterApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.breno_nathanael.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ca7c1bb5-7b9a-4dea-bd1f-b84585ce030c"
+      }
     }
   }
 }
